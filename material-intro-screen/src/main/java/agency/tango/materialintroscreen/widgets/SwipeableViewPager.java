@@ -1,15 +1,15 @@
 package agency.tango.materialintroscreen.widgets;
 
 import android.content.Context;
-import android.support.v4.view.CustomViewPager;
-import android.support.v4.view.MotionEventCompat;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 
 import agency.tango.materialintroscreen.adapter.SlidesAdapter;
+import androidx.core.view.MotionEventCompat;
+import androidx.viewpager.widget.ViewPager;
 
-public class SwipeableViewPager extends CustomViewPager {
+public class SwipeableViewPager extends ViewPager {
     private float startPos = 0;
     private int currentIt;
     private boolean swipingAllowed;
@@ -59,7 +59,7 @@ public class SwipeableViewPager extends CustomViewPager {
                 return super.onTouchEvent(event);
             case (MotionEvent.ACTION_UP):
                 if (!swipingAllowed && startPos - event.getX() > 16) {
-                    smoothScrollTo(getWidth() * currentIt, 0);
+                    scrollTo(getWidth() * currentIt, 0);
                     return true;
                 }
                 startPos = 0;
@@ -79,8 +79,7 @@ public class SwipeableViewPager extends CustomViewPager {
         return false;
     }
 
-    public void moveToNextPage()
-    {
+    public void moveToNextPage() {
         setCurrentItem(getCurrentItem() + 1, true);
     }
 

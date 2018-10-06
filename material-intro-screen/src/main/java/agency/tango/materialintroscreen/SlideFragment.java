@@ -2,9 +2,6 @@ package agency.tango.materialintroscreen;
 
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +13,9 @@ import java.util.Collections;
 import java.util.List;
 
 import agency.tango.materialintroscreen.parallax.ParallaxFragment;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class SlideFragment extends ParallaxFragment {
     private final static String BACKGROUND_COLOR = "background_color";
@@ -63,9 +63,9 @@ public class SlideFragment extends ParallaxFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_slide, container, false);
-        titleTextView = (TextView) view.findViewById(R.id.txt_title_slide);
-        descriptionTextView = (TextView) view.findViewById(R.id.txt_description_slide);
-        imageView = (ImageView) view.findViewById(R.id.image_slide);
+        titleTextView = view.findViewById(R.id.txt_title_slide);
+        descriptionTextView = view.findViewById(R.id.txt_description_slide);
+        imageView = view.findViewById(R.id.image_slide);
         initializeView();
         return view;
     }
