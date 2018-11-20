@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.view;
+package agency.tango.materialintroscreen.widgets;
 
 import android.content.Context;
 import android.content.res.Resources;
