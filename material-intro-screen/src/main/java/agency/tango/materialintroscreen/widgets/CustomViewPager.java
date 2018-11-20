@@ -65,6 +65,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import android.support.v4.view.PagerAdapter;
+
 /**
  * Layout manager that allows the user to flip left and right
  * through pages of data.  You supply an implementation of a
