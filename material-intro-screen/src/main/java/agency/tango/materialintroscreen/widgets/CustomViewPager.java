@@ -65,7 +65,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.*;
 
 /**
  * Layout manager that allows the user to flip left and right
