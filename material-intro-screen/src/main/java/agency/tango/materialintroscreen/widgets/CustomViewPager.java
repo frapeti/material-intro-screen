@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.view;
+package agency.tango.materialintroscreen.widgets;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -64,6 +64,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.AbsSavedState;
+import android.support.v4.view.AccessibilityDelegateCompat;
+import android.support.v4.view.ViewCompat;
+import android.support.v4.view.MotionEventCompat;
 
 /**
  * Layout manager that allows the user to flip left and right
