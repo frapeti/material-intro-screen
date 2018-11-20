@@ -1,6 +1,6 @@
 package agency.tango.materialintroscreen.listeners;
 
-import agency.tango.materialintroscreen.widgets.view.CustomViewPager;
+import agency.tango.materialintroscreen.widgets.CustomViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
